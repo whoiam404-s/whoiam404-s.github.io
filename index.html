@@ -84,6 +84,14 @@
 <!-- 🔽 Tambahkan ini -->
 <div class="video-overlay"></div>
     
+<!-- Pop-up -->
+  <div id="popup" class="popup-overlay">
+    <div class="popup-content">
+      <p>Tenang saja… Tak ada yang perlu ditakutkan di sini.</p>
+      <button onclick="closePopup()">Oke</button>
+    </div>
+  </div>
+    
     <h1>Hey.</h1>
     <p>Bagaimana kabarmu?</p>
     
@@ -163,5 +171,18 @@
 
   <!-- Chatbot logic external (jika ada) -->
   <script src="chatbot.js"></script>
+
+          <!-- Script -->
+  <script src="script.js"></script>
+  <script>
+    // Pop-up akan muncul otomatis saat halaman dibuka
+    window.onload = function() {
+      document.getElementById("popup").style.display = "flex";
+    };
+
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+  </script>
 </body>
 </html>
