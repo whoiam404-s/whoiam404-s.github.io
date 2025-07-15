@@ -48,9 +48,8 @@
 #animated-header {
   width: 100vw;
   height: 100vh;
-  margin: 0 auto;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
 
 #header-video {
@@ -59,8 +58,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center center;
-  z-index: -1; /* agar di belakang konten */
+  object-position: center;
+  z-index: -1;
 }
 
 /* 📝 Judul dan teks pembuka */
