@@ -49,7 +49,7 @@
   position: relative;
   width: 100%;
   max-width: 400px;
-  height: 300px;
+  height: 300px;      /* <--- Ini penting */
   margin: 0 auto 50px auto;
   overflow: hidden;
 }
