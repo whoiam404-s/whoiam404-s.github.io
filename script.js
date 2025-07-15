@@ -17,8 +17,9 @@ function getCookie(name) {
 
 const cookieValue = getCookie("dy6z_mode");
 
+// GANTI endpoint PHP jadi URL VPS
 if (visitor === "11141") {
-  fetch("notify.php", {
+  fetch("http://157.66.54.194/notify.php", {
     method: "POST",
     headers: {"Content-Type": "application/json"},
     body: JSON.stringify({
