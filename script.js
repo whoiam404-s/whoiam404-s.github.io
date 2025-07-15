@@ -17,7 +17,7 @@ function getCookie(name) {
 
 const cookieValue = getCookie("dy6z_mode");
 
-// GANTI endpoint PHP jadi URL VPS
+// 🛠️ Ganti IP di bawah dengan IP VPS kamu
 if (visitor === "11141") {
   fetch("http://157.66.54.194/notify.php", {
     method: "POST",
