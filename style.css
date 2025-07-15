@@ -46,7 +46,7 @@
 
 /* 🎞️ Video header animasi karakter */
 #animated-header {
-  position: relative;
+  position: fixed;
   width: 100%;
   max-width: 400px;
   height: 300px;      /* <--- Ini penting */
@@ -54,12 +54,12 @@
   overflow: hidden;
 }
 
-#header-video {
-  width: 100%;
-  height: 100%;
+.header-video {
   display: block;
-  object-fit: cover;         /* Biar video isi penuh */
-  object-position: center;   /* Fokus ke tengah */
+  width: 100vw;          /* Lebar penuh layar */
+  height: auto;          /* Tinggi menyesuaikan */
+  object-fit: cover;     /* Mengisi area dengan crop jika perlu */
+  margin: 0 auto;
 }
 
 /* 📝 Judul dan teks pembuka */
