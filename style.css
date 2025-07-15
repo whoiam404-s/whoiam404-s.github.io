@@ -46,18 +46,21 @@
 
 /* 🎞️ Video header animasi karakter */
 #animated-header {
-  width: 100% !important;
-  max-width: 400px !important;
-  height: 300px !important;
-  margin: 0 auto 50px !important;
-  overflow: hidden !important;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
 }
 
 #header-video {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  object-position: center center !important;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  z-index: -1; /* agar di belakang konten */
 }
 
 /* 📝 Judul dan teks pembuka */
